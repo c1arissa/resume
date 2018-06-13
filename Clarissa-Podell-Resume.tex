@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Based on the Deedy CV/Resume Template
+% XeLaTeX Template
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,letterpaper]{clar-resume}
+
+\font\fb=''[cmr10]''
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\namesection{Clarissa}{Podell}{ 
+(631)~708-2725
+~|~ \href{mailto:clarissapodell@gmail.com}{clarissapodell@gmail.com} 
+~|~ \href{https://www.linkedin.com/in/clarissapodell/}{in/clarissapodell}
+~|~ Valley Stream, NY 11580
+}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY
+%----------------------------------------------------------------------------------------
+
+\vspace{-1mm}
+\section{Summary}
+\cvparagraph{Recent Cybersecurity graduate with interests in Vulnerability Research, Binary Exploitation, Reverse Engineering, and Exploit Mitigation.  Experience collaborating in groups and competence in real-world environments through online CTF/wargame challenges and coursework using DETERLab testbeds. Seeking career opportunity to collaborate with like-minded individuals.}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{B.S. in Computer Science and}
+\subsection{Information Security}
+\school{John Jay College of Criminal Justice, City University of New York (CUNY)}
+\location{Jan 2016 \textendash{} May 2018 | New York, NY}
+\grade{GPA: 4.0 / 4.0}
+
+\sectionspace 
+
+\subsection{B.S. in Fashion Merchandising}
+\subsection{Management}
+\school{Fashion Institute of Technology, State University of New York (SUNY)}
+\location{Aug 2009 \textendash{} May 2013 | New York, NY}
+\grade{GPA: 3.48 / 4.0}
+
+\sectionspace
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+\location{Strong:}
+Python \textbullet{} C \textbullet{} C++ \textbullet{} {\fb \LaTeX\ } \\ 
+\location{Familiar:}
+Perl \textbullet{} Assembly (x86 Intel) \textbullet{} Bash  \textbullet{} SML
+
+\smallspace
+
+\subsection{Systems}
+Windows \textbullet{} Debian \textbullet{} Ubuntu \textbullet{} Kali Linux
+
+\smallspace
+
+\subsection{Software}
+GDB \textbullet{} WinDbg \textbullet{} Immunity Debugger \\ 
+OllyDbg \textbullet{} IDA Pro \textbullet{} Visual Studio \textbullet{} GCC \\ 
+Wireshark \textbullet{} tcpdump \textbullet{} netcat \textbullet{} Git/SVN \\
+Vim \textbullet{} Metasploit \textbullet{} Volatility Framework
+
+\sectionspace
+
+%------------------------------------------------
+% Awards
+%------------------------------------------------
+
+\section{Awards} 
+
+\subsection{Ruth S. Lefkowitz Mathematics Prize}
+\school{John Jay College of Criminal Justice}
+\location{May 2018 | New York, NY}
+Award presented to one graduating senior for outstanding academic performance in the CS\&IS major.
+
+\smallspace
+
+\subsection{Cornell University's Women in}
+\subsection{Technology \& Entrepreneurship}
+\subsection{in New York (WiTNY) Scholarship}
+\school{John Jay College of Criminal Justice}
+\location{2017 - 2018 | New York, NY}
+Scholarship for promising female students in technology-related disciplines.
+
+\smallspace
+
+%------------------------------------------------
+% Hobbies / Interests
+%------------------------------------------------
+
+\section{Hobbies}
+\textbullet{} \textbf{Wargames} - OverTheWire, pwnable.kr, Root-Me, SmashTheStack, HackThisSite.\\
+\textbullet{} \textbf{Krav Maga} Yellow Belt
+
+%----------------------------------------------------------------------------------------
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Research / Projects
+%------------------------------------------------
+
+\section{Projects}
+
+\runsubsection{Bypassing Microsoft's Control Flow Guard (CFG)}
+\school{| Capstone in Cybersecurity}
+\location{Sep 2017 \textendash{} Present | John Jay College of Criminal Justice, New York, NY}
+
+Team Lead.  Research vulnerabilities and design limitations in CFG that can be leveraged to circumvent security measures and demonstrate several exploits on CFG-enabled binaries in Windows 10 that hijack control \& gain arbitrary code execution. Publication to be submitted.
+
+\smallspace 
+
+%------------------------------------------------
+
+\runsubsection{Electronic Health Record DApp}
+\job{| Faculty Mentored Research: Bitcoin \& Blockchain}
+\location{Jan 2018 \textendash{} May 2018 | John Jay College of Criminal Justice, New York, NY}
+
+Research funded by a National Science Foundation grant to develop a infrastructure for distributed health record storage with access managed by a public blockchain.
+
+\smallspace 
+
+%------------------------------------------------
+% COURSEWORK
+%------------------------------------------------
+
+\runsubsection{Labs (Coursework)}
+\school{| Capstone in Cybersecurity} 
+\location{Fall 2017 | John Jay College of Criminal Justice, New York, NY}
+\vspace{1mm}
+
+\begin{labwork}
+\item[\lab{Cryptography Labs:}] 
+Factored weak 1024-bit RSA moduli by finding a common divisor and reconstructed the private key to decrypt SSL/TLS traffic; Cracked password hashes with dictionary attacks using Hashcat \& John the Ripper.\\[1pt] 
+\item[\lab{Intrusion Detection Systems Lab:}] Configured Snort and OSSEC on a small DETER testbed network and developed signatures \& rules.  Evaluated IDS by creating forged packet streams with Scapy to trigger alerts.\\[1pt]
+\item[\lab{Denial of Service Lab:}] Deployed a SYN flood attack between two testbed nodes \& analyzed tcpdump attack traffic to calculate TCP connection durations.\\[1pt] 
+\item[\lab{Malware Lab:}] Wrote a proof-of-concept Command \& Control botnet (master and worker) in Python.  Commands: download website, send spam, \& send files from host of choice.\\[1pt] 
+\item[\lab{Exploits Lab:}] Wrote scripts to exploit a buffer overflow in web server software and a remote directory traversal vulnerability in perl cgi code.  Created patches to fix the bugs.\\[1pt] 
+\item[\lab{OS-Specific security Lab:}] Wrote an exploit in C to bypass Ubuntu's address space layout randomization protection on a binary with a buffer overflow vulnerability.
+\end{labwork}
+
+\smallspace % Some whitespace after the section
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Work Experience}
+
+\runsubsection{Head Receptionist \& Admin}
+\job{| Williston Park Animal Hospital} \hfill
+\dates{06/2014\textendash{}present}
+Grows the practice through marketing and strategic partnerships with vendors that support the doctor’s holistic specialty; Implements clinic policies and procedures related to account receivables, billing, collections, and inventory controls; Manage \& direct front-office staff through hiring, interviewing, and training.
+
+\smallspace 
+
+%------------------------------------------------
+
+\runsubsection{Asst. Wholesale Planner}
+\job{| alice + olivia, New York, NY} \hfill
+\dates{08/2013\textendash{}05/2014}
+Worked with the Director of Planning to develop pre-season plans aligned with corporate financial targets; Presented revised sales projections based on current and historical data; Created Excel spreadsheet templates to analyze account sales, stock and profitability across business segments.
+
+\smallspace 
+
+%------------------------------------------------
+
+\runsubsection{Wholesale Intern}
+\job{| Alexander Wang Inc., New York, NY} \hfill
+\dates{01/2013\textendash{}06/2013}
+Researched and identified opportunities to expand wholesale business in Asia and Australia. Coordinated the execution of Fall `13 market week \& supervised a group of interns and temps.
+
+\smallspace
+%------------------------------------------------
+
+\runsubsection{Sales}
+\job{| Scoop NYC, New York, NY} \hfill
+\dates{08/2011\textendash{}08/2013}
+Top sales performer, achieved personal monthly quotas averaging \$20,000 in sales per week.  Established loyal network of clients through maintenance of a clientèle database.
+
+\smallspace 
+
+%------------------------------------------------
+
+\runsubsection{Retail Specialist}
+\job{| The Kooples, Metro NY Area} \hfill
+\dates{08/2012\textendash{}04/2013}
+Launched the company's first four stores in the United States.  Oversaw daily operations, established brand recognition \& communicated daily performance to Paris headquarters.
+
+\smallspace 
+
+%------------------------------------------------
+
+\runsubsection{Fashion Office Intern}
+\job{| Bloomingdale's, New York, NY} \hfill
+\dates{06/2011\textendash{}08/2011}
+First intern in history to style seventeen mannequins for the ``Brights and Cropped'' themed story which appeared in the 3rd Ave Flagship windows.
+
+\smallspace 
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
