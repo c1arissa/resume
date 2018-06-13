@@ -8,8 +8,8 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
-\usepackage[hmargin=.75cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
-\usepackage{hyperref} % Required for links
+\usepackage[hmargin=.75cm, vmargin=0.75cm]{geometry}
+\usepackage{hyperref}
 \usepackage{enumitem}
 
 %----------------------------------------------------------------------------------------
@@ -31,21 +31,6 @@
 
 \setmainfont[Color=primary]{Source Sans Pro Light}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
-
-%----------------------------------------------------------------------------------------
-%	LAST UPDATED COMMAND
-%----------------------------------------------------------------------------------------
-
-\usepackage[absolute]{textpos} % Required for positioning the Last Updated text at the top right of the page
-\usepackage[UKenglish]{isodate} % Prints the Last Updated date in UK English format
-
-\setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
-\setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
-\newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
-\begin{textblock}{25}(75,2) % The position of the Last Updated text on the page (75% of the page across, 2% down)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont % Text styling of the text
-Last Updated on \today % Last Updated text
-\end{textblock}}
 
 %----------------------------------------------------------------------------------------
 %	MAIN HEADING COMMAND
@@ -83,40 +68,35 @@ Last Updated on \today % Last Updated text
 \titleformat{\subsection}{ % Customize the subsections and places worked/studied titles
 \color{subheadings}\fontspec{Source Sans Pro}\fontsize{10.5pt}{12pt}\selectfont\bfseries\uppercase}{}{0em}{} 
 
-\newcommand{\summaryhead}[1]{ % Customize the large section titles
-\color{headings}\scshape\fontspec[Path = fonts/raleway/]{Raleway-Light}\fontsize{14pt}{16pt}\selectfont \raggedright\uppercase {#1 \\}\normalfont}
-
-\newcommand{\runsubsection}[1]{ % Used for creating subsections where a description is required on the same line
+\newcommand{\runsubsection}[1]{ % 
 \color{subheadings}\fontspec{Source Sans Pro}\fontsize{10pt}{12pt}\selectfont\bfseries\uppercase {#1}\normalfont}
 
-\newcommand{\school}[1]{ % Used for describing the subsection either on the same line or underneath
+\newcommand{\school}[1]{ % 
 \color{subheadings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{10pt}{12pt}\selectfont\scshape {#1 \\} \normalfont}
 
 \newcommand{\job}[1]{ %
 \color{subheadings}\raggedright\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{9.5pt}{11pt}\selectfont\scshape{#1}\normalfont}
 
-\newcommand{\descript}[1]{ % Used for describing the subsection either on the same line or underneath
+\newcommand{\descript}[1]{ 
 \color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\gpa}[1]{  %
 \color{headings}\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{10pt}{12pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
-\newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
+\newcommand{\location}[1]{ 
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 \newcommand{\dates}[1]{ % 
 \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9.5pt}{11pt}\selectfont {#1\\} \normalfont}
 
-\newcommand{\grade}[1]{ % Used for specifying a duration and/or location under a subsection
+\newcommand{\grade}[1]{ %
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{11pt}{13pt}\selectfont {#1} \normalfont}
 
-\newcommand{\cvparagraph}[1]{ % Used for specifying a duration and/or location under a subsection
+\newcommand{\cvparagraph}[1]{ 
 \color{primary}\raggedright\fontspec{Source Sans Pro}\fontsize{10.5pt}{12pt}\selectfont {#1 \\} \normalfont}
 
 \newcommand{\lab}[1]{%
 \color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{9.5pt}{11pt}\selectfont {#1} \normalfont\color{primary}}
-
-\newcommand{\locationtwo}[1]{\color{subheadings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-SemiBold}\fontsize{10pt}{12pt}\selectfont {#1} \normalfont}
 
 %----------------------------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
@@ -128,6 +108,6 @@ Last Updated on \today % Last Updated text
 
 \newenvironment{labwork} %
   {\renewcommand{\descriptionlabel}[1]{\normalfont\scshape{##1}}%
-   \begin{description}[noitemsep,nosep,align=left,labelsep=0pt,leftmargin=2em]} %,listparindent=3cm]}
+   \begin{description}[noitemsep,nosep,align=left,labelsep=0pt,leftmargin=2em]}
   {\end{description}}
   
